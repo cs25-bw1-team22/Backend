@@ -23,7 +23,10 @@ room = {
 
 '911_MainSt' : Room(title="Starting Location", description="You are now ready to start driving. Please drive forward"),
 '912_MainSt' : Room(title="912 Main Street", description="You are currently at 912 Main Street there are no bustops or intersections. Please drive forward"),
-'913_MainSt' : Room(title="913 Main Street", description="There is a bustop to your right with 2 people waiting. Pick up the passengers and drop them off according to their instructions", passengers=[people['Jahmir'], people['Zakariya']]),
+'913_MainSt' : Room(
+    title="913 Main Street", 
+    description="There is a bustop to your right with 2 people waiting. Pick up the passengers and drop them off according to their instructions", 
+    passengers = [people['Jahmir'], people['Zakariya']]),
 '914_MainSt' : Room(title="914 Main Street", description="You are currently at 914 Main Street there are no bustops or intersections. Please drive forward"),
 '915_MainSt' :Room(title="915 Main Street", description="You are at an intersection, please go left or right"),
 
@@ -38,7 +41,10 @@ room = {
 
 
 '711_FrontSt':   Room(title="711 Front Street", description="You are currently at 711 Front Street there are no bustops or intersections. Please drive forward"),
-'712_FrontSt' : Room(title="712 Front Street", description="There is a bustop to your right with 4 people waiting",passengers=[people['Amaria'], people['Melvin'], people['Naraly'], people['Shiro']]),
+'712_FrontSt' : Room(
+    title="712 Front Street", 
+    description="There is a bustop to your right with 4 people waiting",
+    passengers = [people['Amaria'], people['Melvin'], people['Naraly'], people['Shiro']]),
 '713_FrontSt' : Room(title="713 Front Street", description="You are currently at 713 Front Street there are no bustops or intersections. Please drive forward"),
 '714_FrontSt' : Room(title="714 Front Street", description="You are currently at 714 Front Street there are no bustops or intersections. Please drive forward"),
 '715_FrontSt' : Room(title="715 Front Street", description="You are at an intersection, please go left or right"),
@@ -48,7 +54,10 @@ room = {
 '611_GrapeSt' : Room(title="611 Grape Street", description="You are currently at 611 Grape Street there are no bustops or intersections. Please drive forward"),
 '612_GrapeSt' : Room(title="612 Grape Street", description="There is an empty bus stop to your right."),
 '613_GrapeSt' : Room(title="613 Grape Street", description="You are currently at 613 Grape Street there are no bustops or intersections. Please drive forward"),
-'614_GrapeSt' : Room(title="614 Grape Street", description="There is a bustop to your right with 6 people waiting"),
+'614_GrapeSt' : Room(
+    title = "614 Grape Street", 
+    description = "There is a bustop to your right with 6 people waiting",
+    passengers = [people['Zelma'], people['Roxen'], people['Allaina'], people['Urban']]),
 '615_GrapeSt' : Room(title="615 Grape Street", description="You are at an intersection, please go left or right"),
 
 
