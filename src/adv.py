@@ -5,35 +5,17 @@ from passenger import Passenger
 
 
 people = {
-'Jahmir' : Passenger("Jahmir", "811 SOUTHST"),
-'Zakariya' : Passenger("Zakariya", "414 LAKEST"),
-'Amaria' : Passenger("Amaria", "414 LAKEST"),
-'Melvin' : Passenger("Two Tickets", "STOP 414 LAKEST"),
-'Naraly' : Passenger("STOP 414 LAKEST", ""),
+'Jahmir' : Passenger("Jahmir", "811_SouthSt"),
+'Zakariya' : Passenger("Zakariya", "414_LakeSt"),
+'Amaria' : Passenger("Amaria", "414_LakeSt"),
+'Melvin' : Passenger("Melvin", "414_LakeSt"),
+'Naraly' : Passenger("Naraly", "414_LakeSt"),
 
-'Shiro' : Passenger("One Ticket","STOP 612 GRAPE ST"),
-'Zelma' : Passenger("Two Tickets", "STOP 012 AIRPORT"),
-'Roxen' : Passenger("STOP 014 AIRPORT", ""),
-'Allaina' : Passenger("Three Tickets", "STOP 514 PARK ST"),
-'Urban' : Passenger("STOP 514 PARK ST", ""),
-
-'Ayliana' : Passenger("STOP 514 PARK ST", ""),
-'Wallis' : Passenger("One Ticket", "312 MAGNOLIA ST"),
-'Usman' : Passenger("One Ticket", "312 MAGNOLIA ST"),
-'Meral' : Passenger("One Ticket", "414 LAKEST"),
-'Angeliz' : Passenger("One Ticket", "014 AIRPORT"),
-
-'Milagrace' : Passenger("One Ticket", "012 AIRPORT"),
-'Alyssia' : Passenger("One Ticket", "514 PARK ST"),
-'Manelyk' : Passenger("Three Tickets", "STOP 811 SOUTH ST"),
-'Aariyah' : Passenger("STOP 811 SOUTH ST", ""),
-'Torryn' : Passenger("STOP 811 SOUTH ST", ""),
-
-'Hanny' : Passenger("One Ticket", "STOP 014 AIRPORT"),
-'Breslin' : Passenger("One Ticket", "STOP 012 AIRPORT"),
-'Sofiya' : Passenger("One Ticket", " STOP 014 AIRPORT"),
-'Kalayla' : Passenger("Two Tickets", "STOP 612 GRAPE ST"),
-'Khylei' : Passenger("STOP 612 GRAPE ST", "")
+'Shiro' : Passenger("Shiro","612_GrapeSt"),
+'Zelma' : Passenger("Zelma", "012_AirportSt"),
+'Roxen' : Passenger("Roxen", "014_AirportSt"),
+'Allaina' : Passenger("Allaina", "514_ParkSt"),
+'Urban' : Passenger("Urban", "514_ParkSt"),
 
 }
 
