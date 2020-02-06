@@ -9,7 +9,7 @@ class Room:
         self.w_to = None
 
     def where_am_i(self):
-        print(f"*******************\n{self.title}\n\n\t{self.description}\n*******************")
+        print(f"***********************\n{self.title}\n\n\t{self.description}\n***********************")
         self.list_passengers()
         
     
@@ -28,3 +28,4 @@ class Room:
         if hasattr(self, f"{direction}_to"):
             return getattr(self, f"{direction}_to")
         return None
+

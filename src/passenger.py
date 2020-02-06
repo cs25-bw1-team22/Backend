@@ -3,11 +3,11 @@ class Passenger:
         self.title = title
         self.description = description
     def __str__(self):
-        return self.title
+        return f"{self.title} : {self.description}"
 
 
     def on_take(self):
         print(f"PICKED UP {self.title} {self.description}")
 
     def on_drop(self):
-        print(f"DROPPED {self.title}")
+        print(f"DROPPED OFF {self.title}")
