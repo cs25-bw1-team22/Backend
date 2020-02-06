@@ -52,6 +52,19 @@ class Player(models.Model):
             self.initialize()
             return self.room()
 
+class Passenger(models.Model):
+    destination = models.IntegerField(default=0)
+    name = models.CharField(max_length=50, default="DEFAULT NAME")
+    description = models.TextField(max_length=500, default="DEFAULT DESCRIPTION")
+    def __init__(self, name, description):
+        self.name = name
+        self.description = description
+        self.destination = destination
+    def on_pickup(self):
+        print(f"PICKED UP {self.name} {self.description} {self.destination}")
+    def on_drop(self):
+        print(f"DROPPED OFF {self.name}")
+
 @receiver(post_save, sender=User)
 def create_user_player(sender, instance, created, **kwargs):
     if created:
