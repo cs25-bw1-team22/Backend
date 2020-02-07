@@ -387,8 +387,8 @@ room['1404_HamiltonSt'].connectRooms(room['1403_HamiltonSt'], 's_to')
 room['1403_HamiltonSt'].connectRooms(room['1402_HamiltonSt'], 's_to')
 room['1402_HamiltonSt'].connectRooms(room['1401_HamiltonSt'], 's_to')
 
-room['1405_HamiltonSt'].connectRooms(room['1501_GrahamSt'], 'w_to)
-room['1501_GrahamSt'].connectRooms(room['1405_HamiltonSt'], 'e_to)
+room['1405_HamiltonSt'].connectRooms(room['1501_GrahamSt'], 'w_to')
+room['1501_GrahamSt'].connectRooms(room['1405_HamiltonSt'], 'e_to')
 
 room['1501_GrahamSt'].connectRooms(room['1502_GrahamSt'], 'n_to')
 room['1502_GrahamSt'].connectRooms(room['1503_GrahamSt'], 'n_to')
