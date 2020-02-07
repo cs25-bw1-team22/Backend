@@ -63,7 +63,7 @@ def move(request):
 @csrf_exempt
 @api_view(["GET"])
 def map_end(request):
-    whole_map = Room.objects.all()
+    whole_map = Room.objects.all().values()
     map_list = list(whole_map)
     return JsonResponse({'map': map_list}, safe=False)
 
