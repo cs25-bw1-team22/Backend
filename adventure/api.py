@@ -23,7 +23,7 @@ def initialize(request):
     return JsonResponse({'uuid': uuid, 'name':player.user.username, 'title':room.title, 'description':room.description, 'players':players}, safe=True)
 
 
-# @csrf_exempt
+@csrf_exempt
 @api_view(["POST"])
 def move(request):
     dirs={"n": "north", "s": "south", "e": "east", "w": "west"}
@@ -45,7 +45,7 @@ def move(request):
         nextRoomID = room.w_to
     if nextRoomID is not None and nextRoomID > 0:
         nextRoom = Room.objects.get(id=nextRoomID)
-        player.currentRoom=nextRoomID
+        player.current_room=nextRoomID
         player.save()
         players = nextRoom.playerNames(player_id)
         currentPlayerUUIDs = room.playerUUIDs(player_id)
@@ -67,11 +67,6 @@ def map_end(request):
         
     return JsonResponse({'map':whole_map})
 
-# Make endpoint to deliver room to the frontend
-# @csrf_exempt
-# @api_view(["GET"])
-# def banana(request):
-#   return JsonResponse({}) 
 
 @csrf_exempt
 @api_view(["POST"])

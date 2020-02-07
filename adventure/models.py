@@ -12,6 +12,7 @@ class Room(models.Model):
     s_to = models.IntegerField(default=0)
     e_to = models.IntegerField(default=0)
     w_to = models.IntegerField(default=0)
+
     def connectRooms(self, destinationRoom, direction):
         destinationRoomID = destinationRoom.id
         try:
@@ -39,12 +40,12 @@ class Room(models.Model):
 
 class Player(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    current_room = models.CharField(max_length=500, default="DEFAULT CURRENT ROOM")
+
+    currentRoom = models.CharField(max_length=500)
     uuid = models.UUIDField(default=uuid.uuid4, unique=True)
-    title = models.CharField(max_length=500, default="DEFAULT TITLE")
-    # commented out because it's not compiling due to models not having an ArrayField() method
-    # and because it's stretch for now
-    # passenger_inv = models.ArrayField(models.CharField(max_length=500))
+    #title = models.CharField(max_length=500)
+    #passenger_inv = models.ArrayField(models.CharField(max_length=500))
+
 
     def initialize(self):
         if self.currentRoom == 0:
@@ -56,6 +57,52 @@ class Player(models.Model):
         except Room.DoesNotExist:
             self.initialize()
             return self.room()
+    '''
+    def move_player(self, inp):
+        possible_room = self.current_room.get_room_in_direction(inp)
+            
+        if possible_room is not None:
+            self.current_room = possible_room
+            self.current_room.where_am_i()
+        
+        else:
+            print("\n"+"There is nothing in that direction"+"\n")
+
+
+    def get_passenger(self, passenger):
+        for obj in self.current_room.passengers:
+            if obj.title == passenger:
+                self.passenger_inv.append(obj)
+                self.save()
+                obj.on_take()
+                self.current_room.passengers.remove(obj)
+
+
+    def drop_passenger(self,passenger):
+        for obj in self.passenger_inv:
+            if obj.title == passenger:
+                if obj.description == self.current_room.title:
+                    self.passenger_inv.remove(obj)
+                    obj.on_drop()
+                    self.current_room.passengers.append(obj)
+                else:
+                    print("\nNot the right drop-off location\n")            
+
+class Passenger(models.Model):
+    def __init__(self, title, description):
+        self.title = title
+        self.description = description
+    def __str__(self):
+        return f"{self.title} : {self.description}"
+
+
+    def on_take(self):
+        print(f"PICKED UP {self.title} {self.description}")
+
+    def on_drop(self):
+        print(f"DROPPED OFF {self.title}")
+
+    '''
 
     def move_player(self, inp):
         possible_room = self.current_room.get_room_in_direction(inp)
@@ -112,4 +159,9 @@ def create_user_player(sender, instance, created, **kwargs):
 
 @receiver(post_save, sender=User)
 def save_user_player(sender, instance, **kwargs):
+
     instance.player.save()
+
+
+    instance.player.save()
+

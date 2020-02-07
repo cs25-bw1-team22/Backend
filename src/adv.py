@@ -1,7 +1,5 @@
 from adventure.models import Player, Room
 
-
-
 # people = {
 # 'Jahmir' : Passenger("Jahmir", "811_SouthSt"),
 # 'Zakariya' : Passenger("Zakariya", "414_LakeSt"),
@@ -39,6 +37,84 @@ from adventure.models import Player, Room
 #     p.save()
 
 room = {
+
+
+'911_MainSt' : Room(title="Starting Location", description="You are now ready to start driving. Please drive forward"),
+'912_MainSt' : Room(title='912_MainSt', description="You are currently at 912 Main Street there are no bustops or intersections. Please drive forward"),
+'913_MainSt' : Room(title='913_MainSt', description="There is a bustop to your right with 2 people waiting. Pick up the passengers and drop them off according to their instructions"),
+'914_MainSt' : Room(title='914_MainSt', description="You are currently at 914 Main Street there are no bustops or intersections. Please drive forward"),
+'915_MainSt' : Room(title='915_MainSt', description="You are at an intersection, please go left or right"),
+
+
+
+'811_SouthSt' : Room(title='811_SouthSt', description="There is an empty bustop to your right."),
+'812_SouthSt' : Room(title='812_SouthSt', description="You are currently at 812 South Street there are no bustops or intersections. Please drive forward"),
+'813_SouthSt' : Room(title='813_SouthSt', description="You are currently at 813 South Street there are no bustops or intersections. Please drive forward"),
+'814_SouthSt' : Room(title='814_SouthSt', description="You are currently at 814 South Street there are no bustops or intersections. Please drive forward"),
+'815_SouthSt' : Room(title='815_SouthSt', description="You are at an intersection, please go left or right"),
+
+
+
+'711_FrontSt':   Room(title='711_FrontSt', description="You are currently at 711 Front Street there are no bustops or intersections. Please drive forward"),
+'712_FrontSt' : Room(
+    title='712_FrontSt', 
+    description="There is a bustop to your right with 4 people waiting"),
+'713_FrontSt' : Room(title='713_FrontSt', description="You are currently at 713 Front Street there are no bustops or intersections. Please drive forward"),
+'714_FrontSt' : Room(title='714_FrontSt', description="You are currently at 714 Front Street there are no bustops or intersections. Please drive forward"),
+'715_FrontSt' : Room(title='715_FrontSt', description="You are at an intersection, please go left or right"),
+
+
+
+'611_GrapeSt' : Room(title='611_GrapeSt', description="You are currently at 611 Grape Street there are no bustops or intersections. Please drive forward"),
+'612_GrapeSt' : Room(title='612_GrapeSt', description="There is an empty bus stop to your right."),
+'613_GrapeSt' : Room(title='613_GrapeSt', description="You are currently at 613 Grape Street there are no bustops or intersections. Please drive forward"),
+'614_GrapeSt' : Room(
+    title = '614_GrapeSt', 
+    description = "There is a bustop to your right with 6 people waiting"),
+'615_GrapeSt' : Room(title='615_GrapeSt', description="You are at an intersection, please go left or right"),
+
+
+
+'511_ParkSt' : Room(title='511_ParkSt', description="You are currently at 511 Park Street there are no bustops or intersections. Please drive forward"),
+'512_ParkSt' : Room(title='512_ParkSt', description="You are currently at 512 Park Street there are no bustops or intersections. Please drive forward"),
+'513_ParkSt' : Room(title='513_ParkSt', description="You are currently at 513 Park Street there are no bustops or intersections. Please drive forward"),
+'514_ParkSt' : Room(title='514_ParkSt', description="There is an empty bus stop to your right."),
+'515_ParkSt' : Room(title='515_ParkSt', description="You are at an intersection, please go left or right"),
+
+
+'411_LakeSt' : Room(title='411_LakeSt', description="You are currently at 411 Lake Street there are no bustops or intersections. Please drive forward"),
+'412_LakeSt' : Room(title='412_LakeSt', description="You are currently at 412 Lake Street there are no bustops or intersections. Please drive forward"),
+'413_LakeSt' : Room(title='413_LakeSt', description="You are currently at 413 Lake Street there are no bustops or intersections. Please drive forward"),
+'414_LakeSt' : Room(title='414_LakeSt', description="There is an empty bus stop to your right."),
+'415_LakeSt' : Room(title='415_LakeSt', description="You are at an intersection, please go left or right"),
+
+
+'311_MagnoliaSt' : Room(title='311_MagnoliaSt', description="You are currently at 311 Magnolia Street there are no bustops or intersections. Please drive forward"),
+'312_MagnoliaSt' : Room(title='312_MagnoliaSt', description="You are currently at 312 Magnolia Street there is an intersection to your right with an empty bus stop"),
+'313_MagnoliaSt' : Room(title='313_MagnoliaSt', description="You are currently at 313 Magnolia Street there are no bustops or intersections. Please drive forward"),
+'314_MagnoliaSt' : Room(title='314_MagnoliaSt', description="You are currently at 314 Magnolia Street there are no bustops or intersections. Please drive forward"),
+'315_MagnoliaSt' : Room(title='315_MagnoliaSt', description="You are at an intersection, please go left or right"),
+
+
+'211_SunsetSt' : Room(title='211_SunsetSt', description="You are currently at 211 Sunset Street there are no bustops or intersections. Please drive forward"),
+'212_SunsetSt' : Room(title='212_SunsetSt', description="You are currently at 212 Sunset Street there are no bustops or intersections. Please drive forward"),
+'213_SunsetSt' : Room(title='213_SunsetSt', description="You are currently at 213 Sunset Street there are no bustops or intersections. Please drive forward"),
+'214_SunsetSt' : Room(title='214_SunsetSt', description="There is a bustop to your right with 6 people waiting"),
+'215_SunsetSt' : Room(title='215_SunsetSt', description="You are at an intersection, please go left or right"),
+
+
+'111_ApacheSt' : Room(title='111_ApacheSt', description="You are currently at 111 Apache Street there are no bustops or intersections. Please drive forward"),
+'112_ApacheSt' : Room(title='112_ApacheSt', description="You are currently at 112 Apache Street there is an intersection to your right with an empty bus stop"),
+'113_ApacheSt' : Room(title='113_ApacheSt', description="You are currently at 113 Apache Street there are no bustops or intersections. Please drive forward"),
+'114_ApacheSt' : Room(title='114_ApacheSt', description="There is a bustop to your right with 5 people waiting"),
+'115_ApacheSt' : Room(title='115_ApacheSt', description="You are at an intersection, please go left or right" ),
+
+
+'011_AirportSt' : Room(title='011_AirportSt', description="You are currently at 011 Airport Street there are no bustops or intersections. Please drive forward"),
+'012_AirportSt' : Room(title='012_AirportSt', description="You are currently at 012 Airport Street there is an intersection to your right with an empty bus stop"),
+'013_AirportSt' : Room(title='013_AirportSt', description="You are currently at 013 Airport Street there are no bustops or intersections. Please drive forward"),
+'014_AirportSt' : Room(title='014_AirportSt', description="We are at the airport."),
+'015_AirportSt' : Room(title='015_AirportSt', description="There is a bus stop to your left with 2 people waiting"),
 
 '911_MainSt' : Room(title="Starting Location", description="You are now ready to start driving. Please drive forward", passengers=[]),
 '912_MainSt' : Room(title='912_MainSt', description="You are currently at 912 Main Street there are no bustops or intersections. Please drive forward",passengers=[]),
@@ -118,6 +194,7 @@ room = {
 '013_AirportSt' : Room(title='013_AirportSt', description="You are currently at 013 Airport Street there are no bustops or intersections. Please drive forward", passengers=[]),
 '014_AirportSt' : Room(title='014_AirportSt', description="We are at the airport.", passengers=[]),
 '015_AirportSt' : Room(title='015_AirportSt', description="There is a bus stop to your left with 2 people waiting", passengers=[]),
+
 
 '1001_DrewSt' : Room(title="1001_DrewSt", description="You are now ready to start driving. Please drive forward"),
 '1002_DrewSt' : Room(title="1002_DrewSt", description="You are currently at 1002 Drew Street there are no bustops or intersections. Please drive forward"),
@@ -463,6 +540,9 @@ action_list = ['pickup', 'dropoff']
 
 player_1 = Player("Buzz", room["911_MainSt"])
 
+'''
+
+
 while True:
 
     user_input = input(    "\n"
@@ -503,4 +583,6 @@ while True:
 
         else:
             print("\nDid not recognize that command")
+
+        '''
 

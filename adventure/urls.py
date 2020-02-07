@@ -6,4 +6,6 @@ urlpatterns = [
     url('move', api.move),
     url('map', api.map_end),
     url('say', api.say),
+    url('map', api.map_end)
+
 ]
