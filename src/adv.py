@@ -1,7 +1,4 @@
-from room import Room
-from player import Player
-from passenger import Passenger
-
+from adventure.models import Player, Room, Passenger
 
 
 people = {
