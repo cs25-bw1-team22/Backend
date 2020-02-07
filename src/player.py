@@ -1,6 +1,6 @@
 from room import Room
 class Player:
-    def __init__(self, title, current_room, passengers_inv=None):
+    def __init__(self, title, current_room, passenger_inv=None):
 
         self.title = title
         self.current_room = current_room
@@ -28,6 +28,9 @@ class Player:
     def drop_passenger(self,passenger):
         for obj in self.passenger_inv:
             if obj.title == passenger:
-                self.passenger_inv.remove(obj)
-                obj.on_drop()
-                self.current_room.passengers.append(obj)
+                if obj.description == self.current_room.title:
+                    self.passenger_inv.remove(obj)
+                    obj.on_drop()
+                    self.current_room.passengers.append(obj)
+                else:
+                    print("\nNot the right drop-off location\n")

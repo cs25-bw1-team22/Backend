@@ -11,3 +11,6 @@ class Passenger:
 
     def on_drop(self):
         print(f"DROPPED OFF {self.title}")
+
+    def check(self):
+        self.drop_check()

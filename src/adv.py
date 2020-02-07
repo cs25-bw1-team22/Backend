@@ -259,12 +259,12 @@ while True:
         if user_input in move_list:
             player_1.move_player(user_input)
         elif user_input == "i":
-            print("Passengers:  "+"\n")
-            if (len(player_1.passengers) == 0):
-                print('No passengers on the bus')
+            print("\nPassengers:  "+"\n")
+            if (len(player_1.passenger_inv) == 0):
+                print('\nNo passengers on the bus\n')
             else:
-                for i in range(len(player_1.passengers)):
-                    print(player_1.passengers[i])
+                for i in range(len(player_1.passenger_inv)):
+                    print(player_1.passenger_inv[i])
             
 
         elif user_input == "q":
@@ -272,7 +272,7 @@ while True:
             print("Goodbye!")
             exit()
         else:
-            print("\nDid not recognize that command")
+            print("\nDid not recognize that command\n")
     
     else:
         
