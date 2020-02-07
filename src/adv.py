@@ -37,6 +37,9 @@ people = {
 
 }
 
+for p in people:
+    p.save()
+
 room = {
 
 '911_MainSt' : Room(title="Starting Location", description="You are now ready to start driving. Please drive forward", passengers=[]),
@@ -188,6 +191,9 @@ room = {
 '1905_JacksonSt' : Room(title="1905_JacksonSt", description="There is a bus stop to your left with 2 people waiting"),
 
 }
+
+for i in room:
+    i.save()
 
 room['911_MainSt'].connectRooms(room['912_MainSt'], n_to)
 room['912_MainSt'].connectRooms(room['913_MainSt'], n_to)
@@ -500,6 +506,3 @@ while True:
         else:
             print("\nDid not recognize that command")
 
-    
-for i in room:
-    i.room_save()
