@@ -56,11 +56,23 @@ s813_SouthSt = Room(title='813_SouthSt', description="You are currently at 813 S
 s814_SouthSt = Room(title='814_SouthSt', description="You are currently at 814 South Street there are no bustops or intersections. Please drive forward")
 s815_SouthSt = Room(title='815_SouthSt', description="You are at an intersection, please go left or right")
 
+s811_SouthSt.save()
+s812_SouthSt.save()
+s813_SouthSt.save()
+s814_SouthSt.save()
+s815_SouthSt.save()
+
 s711_FrontSt =  Room(title='711_FrontSt', description="You are currently at 711 Front Street there are no bustops or intersections. Please drive forward")
 s712_FrontSt = Room(title='712_FrontSt', description="There is a bustop to your right with 4 people waiting")
 s713_FrontSt = Room(title='713_FrontSt', description="You are currently at 713 Front Street there are no bustops or intersections. Please drive forward")
 s714_FrontSt = Room(title='714_FrontSt', description="You are currently at 714 Front Street there are no bustops or intersections. Please drive forward")
 s715_FrontSt = Room(title='715_FrontSt', description="You are at an intersection, please go left or right")
+
+s711_FrontSt.save()
+s712_FrontSt.save()
+s713_FrontSt.save()
+s714_FrontSt.save()
+s715_FrontSt.save()
 
 s611_GrapeSt = Room(title='611_GrapeSt', description="You are currently at 611 Grape Street there are no bustops or intersections. Please drive forward")
 s612_GrapeSt = Room(title='612_GrapeSt', description="There is an empty bus stop to your right.")
@@ -68,6 +80,11 @@ s613_GrapeSt = Room(title='613_GrapeSt', description="You are currently at 613 G
 s614_GrapeSt = Room(title = '614_GrapeSt', description = "There is a bustop to your right with 6 people waiting")
 s615_GrapeSt = Room(title='615_GrapeSt', description="You are at an intersection, please go left or right")
 
+s611_GrapeSt.save()
+s612_GrapeSt.save()
+s613_GrapeSt.save()
+s614_GrapeSt.save()
+s615_GrapeSt.save()
 
 s511_ParkSt = Room(title='511_ParkSt', description="You are currently at 511 Park Street there are no bustops or intersections. Please drive forward")
 s512_ParkSt = Room(title='512_ParkSt', description="You are currently at 512 Park Street there are no bustops or intersections. Please drive forward")
@@ -75,17 +92,35 @@ s513_ParkSt = Room(title='513_ParkSt', description="You are currently at 513 Par
 s514_ParkSt = Room(title='514_ParkSt', description="There is an empty bus stop to your right.")
 s515_ParkSt = Room(title='515_ParkSt', description="You are at an intersection, please go left or right")
 
+s511_ParkSt.save()
+s512_ParkSt.save()
+s513_ParkSt.save()
+s514_ParkSt.save()
+s515_ParkSt.save()
+
 s411_LakeSt = Room(title='411_LakeSt', description="You are currently at 411 Lake Street there are no bustops or intersections. Please drive forward")
 s412_LakeSt = Room(title='412_LakeSt', description="You are currently at 412 Lake Street there are no bustops or intersections. Please drive forward")
 s413_LakeSt = Room(title='413_LakeSt', description="You are currently at 413 Lake Street there are no bustops or intersections. Please drive forward")
 s414_LakeSt = Room(title='414_LakeSt', description="There is an empty bus stop to your right.")
 s415_LakeSt = Room(title='415_LakeSt', description="You are at an intersection, please go left or right")
 
+s411_LakeSt.save()
+s412_LakeSt.save()
+s413_LakeSt.save()
+s414_LakeSt.save()
+s415_LakeSt.save()
+
 s311_MagnoliaSt = Room(title='311_MagnoliaSt', description="You are currently at 311 Magnolia Street there are no bustops or intersections. Please drive forward")
 s312_MagnoliaSt = Room(title='312_MagnoliaSt', description="You are currently at 312 Magnolia Street there is an intersection to your right with an empty bus stop")
 s313_MagnoliaSt = Room(title='313_MagnoliaSt', description="You are currently at 313 Magnolia Street there are no bustops or intersections. Please drive forward")
 s314_MagnoliaSt = Room(title='314_MagnoliaSt', description="You are currently at 314 Magnolia Street there are no bustops or intersections. Please drive forward")
 s315_MagnoliaSt = Room(title='315_MagnoliaSt', description="You are at an intersection, please go left or right")
+
+s311_MagnoliaSt.save()
+s312_MagnoliaSt.save()
+s313_MagnoliaSt.save()
+s314_MagnoliaSt.save()
+s315_MagnoliaSt.save()
 
 s211_SunsetSt = Room(title='211_SunsetSt', description="You are currently at 211 Sunset Street there are no bustops or intersections. Please drive forward")
 s212_SunsetSt = Room(title='212_SunsetSt', description="You are currently at 212 Sunset Street there are no bustops or intersections. Please drive forward")
