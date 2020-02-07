@@ -72,3 +72,9 @@ def map_end(request):
 # @api_view(["GET"])
 # def banana(request):
 #   return JsonResponse({}) 
+
+@csrf_exempt
+@api_view(["POST"])
+def say(request):
+    # IMPLEMENT
+    return JsonResponse({'error':"Not yet implemented"}, safe=True, status=500)
