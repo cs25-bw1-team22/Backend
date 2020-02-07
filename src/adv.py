@@ -165,7 +165,7 @@ s1903_JacksonSt = Room(title="1903_JacksonSt", description="You are currently at
 s1904_JacksonSt = Room(title="1904_JacksonSt", description="We are at the airport.")
 s1905_JacksonSt = Room(title="1905_JacksonSt", description="There is a bus stop to your left with 2 people waiting")
 
-
+s1905_JacksonSt.save()
 #for i in room:
  #   i.save()
 
