@@ -44,14 +44,23 @@ from adventure.models import Player, Room
 914_MainSt = Room(title='914_MainSt', description="You are currently at 914 Main Street there are no bustops or intersections. Please drive forward"),
 915_MainSt = Room(title='915_MainSt', description="You are at an intersection, please go left or right"),
 
-
-
+911_MainSt.save()
+912_MainSt.save()
+913_MainSt.save()
+914_MainSt.save()
+915_MainSt.save()
+ 
 811_SouthSt = Room(title='811_SouthSt', description="There is an empty bustop to your right."),
 812_SouthSt = Room(title='812_SouthSt', description="You are currently at 812 South Street there are no bustops or intersections. Please drive forward"),
 813_SouthSt = Room(title='813_SouthSt', description="You are currently at 813 South Street there are no bustops or intersections. Please drive forward"),
 814_SouthSt = Room(title='814_SouthSt', description="You are currently at 814 South Street there are no bustops or intersections. Please drive forward"),
 815_SouthSt = Room(title='815_SouthSt', description="You are at an intersection, please go left or right"),
 
+811_SouthSt.save()
+812_SouthSt.save()
+813_SouthSt.save()
+814_SouthSt.save()
+815_SouthSt.save()
 
 
 711_FrontSt =  Room(title='711_FrontSt', description="You are currently at 711 Front Street there are no bustops or intersections. Please drive forward"),
@@ -60,7 +69,11 @@ from adventure.models import Player, Room
 714_FrontSt = Room(title='714_FrontSt', description="You are currently at 714 Front Street there are no bustops or intersections. Please drive forward"),
 715_FrontSt = Room(title='715_FrontSt', description="You are at an intersection, please go left or right"),
 
-
+711_FrontSt.save()
+712_FrontSt.save()
+713_FrontSt.save()
+714_FrontSt.save()
+715_FrontSt.save()
 
 611_GrapeSt = Room(title='611_GrapeSt', description="You are currently at 611 Grape Street there are no bustops or intersections. Please drive forward"),
 612_GrapeSt = Room(title='612_GrapeSt', description="There is an empty bus stop to your right."),
@@ -68,7 +81,11 @@ from adventure.models import Player, Room
 614_GrapeSt = Room(title = '614_GrapeSt', description = "There is a bustop to your right with 6 people waiting"),
 615_GrapeSt = Room(title='615_GrapeSt', description="You are at an intersection, please go left or right"),
 
-
+611_GrapeSt.save()
+612_GrapeSt.save()
+613_GrapeSt.save()
+614_GrapeSt.save()
+615_GrapeSt.save()
 
 511_ParkSt = Room(title='511_ParkSt', description="You are currently at 511 Park Street there are no bustops or intersections. Please drive forward"),
 512_ParkSt = Room(title='512_ParkSt', description="You are currently at 512 Park Street there are no bustops or intersections. Please drive forward"),
@@ -76,6 +93,11 @@ from adventure.models import Player, Room
 514_ParkSt = Room(title='514_ParkSt', description="There is an empty bus stop to your right."),
 515_ParkSt = Room(title='515_ParkSt', description="You are at an intersection, please go left or right"),
 
+511_ParkSt.save()
+512_ParkSt.save()
+513_ParkSt.save()
+514_ParkSt.save()
+515_ParkSt.save()
 
 411_LakeSt = Room(title='411_LakeSt', description="You are currently at 411 Lake Street there are no bustops or intersections. Please drive forward"),
 412_LakeSt = Room(title='412_LakeSt', description="You are currently at 412 Lake Street there are no bustops or intersections. Please drive forward"),
@@ -83,6 +105,11 @@ from adventure.models import Player, Room
 414_LakeSt = Room(title='414_LakeSt', description="There is an empty bus stop to your right."),
 415_LakeSt = Room(title='415_LakeSt', description="You are at an intersection, please go left or right"),
 
+411_LakeSt.save()
+412_LakeSt.save()
+413_LakeSt.save()
+414_LakeSt.save()
+415_LakeSt.save()
 
 311_MagnoliaSt = Room(title='311_MagnoliaSt', description="You are currently at 311 Magnolia Street there are no bustops or intersections. Please drive forward"),
 312_MagnoliaSt = Room(title='312_MagnoliaSt', description="You are currently at 312 Magnolia Street there is an intersection to your right with an empty bus stop"),
@@ -90,6 +117,11 @@ from adventure.models import Player, Room
 314_MagnoliaSt = Room(title='314_MagnoliaSt', description="You are currently at 314 Magnolia Street there are no bustops or intersections. Please drive forward"),
 315_MagnoliaSt = Room(title='315_MagnoliaSt', description="You are at an intersection, please go left or right"),
 
+311_MagnoliaSt.save()
+312_MagnoliaSt.save()
+313_MagnoliaSt.save()
+314_MagnoliaSt.save()
+315_MagnoliaSt.save()
 
 211_SunsetSt = Room(title='211_SunsetSt', description="You are currently at 211 Sunset Street there are no bustops or intersections. Please drive forward"),
 212_SunsetSt = Room(title='212_SunsetSt', description="You are currently at 212 Sunset Street there are no bustops or intersections. Please drive forward"),
@@ -97,6 +129,11 @@ from adventure.models import Player, Room
 214_SunsetSt = Room(title='214_SunsetSt', description="There is a bustop to your right with 6 people waiting"),
 215_SunsetSt = Room(title='215_SunsetSt', description="You are at an intersection, please go left or right"),
 
+211_SunsetSt.save()
+212_SunsetSt.save()
+213_SunsetSt.save()
+214_SunsetSt.save()
+215_SunsetSt.save()
 
 111_ApacheSt = Room(title='111_ApacheSt', description="You are currently at 111 Apache Street there are no bustops or intersections. Please drive forward"),
 112_ApacheSt = Room(title='112_ApacheSt', description="You are currently at 112 Apache Street there is an intersection to your right with an empty bus stop"),
@@ -104,6 +141,11 @@ from adventure.models import Player, Room
 114_ApacheSt = Room(title='114_ApacheSt', description="There is a bustop to your right with 5 people waiting"),
 115_ApacheSt = Room(title='115_ApacheSt', description="You are at an intersection, please go left or right" ),
 
+111_ApacheSt.save()
+112_ApacheSt.save()
+113_ApacheSt.save()
+114_ApacheSt.save()
+115_ApacheSt.save()
 
 011_AirportSt = Room(title='011_AirportSt', description="You are currently at 011 Airport Street there are no bustops or intersections. Please drive forward"),
 012_AirportSt = Room(title='012_AirportSt', description="You are currently at 012 Airport Street there is an intersection to your right with an empty bus stop"),
@@ -111,12 +153,23 @@ from adventure.models import Player, Room
 014_AirportSt = Room(title='014_AirportSt', description="We are at the airport."),
 015_AirportSt = Room(title='015_AirportSt', description="There is a bus stop to your left with 2 people waiting"),
 
+011_AirportSt.save()
+012_AirportSt.save()
+013_AirportSt.save()
+014_AirportSt.save()
+015_AirportSt.save()
+
 1001_DrewSt = Room(title="1001_DrewSt", description="You are now ready to start driving. Please drive forward"),
 1002_DrewSt = Room(title="1002_DrewSt", description="You are currently at 1002 Drew Street there are no bustops or intersections. Please drive forward"),
 1003_DrewSt = Room(title="1003_DrewSt", description="There is a bustop to your right with 2 people waiting. Pick up the passengers and drop them off according to their instructions"), 
 1004_DrewSt = Room(title="1004_DrewSt", description="You are currently at 1004 Drew Street there are no bustops or intersections. Please drive forward"),
 1005_DrewSt = Room(title="1005_DrewSt", description="You are at an intersection, please go left or right"),
 
+1001_DrewSt.save()
+1002_DrewSt.save()
+1003_DrewSt.save()
+1004_DrewSt.save()
+1005_DrewSt.save()
 
 1101_MangoSt = Room(title="1101_MangoSt", description="There is an empty bustop to your right."),
 1102_MangoSt = Room(title="1102_MangoSt", description="You are currently at 1102 Mango Street there are no bustops or intersections. Please drive forward"),
@@ -124,6 +177,11 @@ from adventure.models import Player, Room
 1104_MangoSt = Room(title="1104_MangoSt", description="You are currently at 1104 Mango Street there are no bustops or intersections. Please drive forward"),
 1105_MangoSt =  Room(title="1105_MangoSt", description="You are at an intersection, please go left or right"),
 
+1101_MangoSt.save()
+1102_MangoSt.save()
+1103_MangoSt.save()
+1104_MangoSt.save()
+1105_MangoSt.save()
 
 1201_WashingtonSt = Room(title="1201_WashingtonSt", description="You are currently at 1201 Washington Street there are no bustops or intersections. Please drive forward"),
 1202_WashingtonSt = Room(title="1202_WashingtonSt", description="There is a bustop to your right with 4 people waiting"),
@@ -131,6 +189,11 @@ from adventure.models import Player, Room
 1204_WashingtonSt = Room(title="1204_WashingtonSt", description="You are currently at 1204 Washington Street there are no bustops or intersections. Please drive forward"),
 1205_WashingtonSt = Room(title="1205_WashingtonSt", description="You are at an intersection, please go left or right"),
 
+1201_WashingtonSt.save()
+1202_WashingtonSt.save()
+1203_WashingtonSt.save()
+1204_WashingtonSt.save()
+1205_WashingtonSt.save()
 
 1301_LincolnSt = Room(title="1301_LincolnSt", description="You are currently at 1301 Lincoln Street there are no bustops or intersections. Please drive forward"),
 1302_LincolnSt = Room(title="1302_LincolnSt", description="There is an empty bus stop to your right."),
@@ -138,6 +201,11 @@ from adventure.models import Player, Room
 1304_LincolnSt = Room(title="1304_LincolnSt", description = "There is a bustop to your right with 6 people waiting"),
 1305_LincolnSt = Room(title="1305 LincolnSt", description="You are at an intersection, please go left or right"),
 
+1301_LincolnSt.save()
+1302_LincolnSt.save()
+1303_LincolnSt.save()
+1304_LincolnSt.save()
+1305_LincolnSt.save()
 
 1401_HamiltonSt = Room(title="1401_HamiltonSt", description="You are currently at 1401 Hamilton Street there are no bustops or intersections. Please drive forward"),
 1402_HamiltonSt = Room(title="1402_HamiltonSt", description="You are currently at 1402 Hamilton Street there are no bustops or intersections. Please drive forward"),
@@ -145,6 +213,11 @@ from adventure.models import Player, Room
 1404_HamiltonSt = Room(title="1404_HamiltonSt", description="There is an empty bus stop to your right."),
 1405_HamiltonSt = Room(title="1405_HamiltonSt", description="You are at an intersection, please go left or right"),
 
+1401_HamiltonSt.save()
+1402_HamiltonSt.save()
+1403_HamiltonSt.save()
+1404_HamiltonSt.save()
+1405_HamiltonSt.save()
 
 1501_GrahamSt = Room(title="1501_GrahamSt", description="You are currently at 1501 Graham Street there are no bustops or intersections. Please drive forward"),
 1502_GrahamSt = Room(title="1502_GrahamSt", description="You are currently at 1502 Graham Street there are no bustops or intersections. Please drive forward"),
@@ -152,6 +225,11 @@ from adventure.models import Player, Room
 1504_GrahamSt = Room(title="1504_GrahamSt", description="There is an empty bus stop to your right."),
 1505_GrahamSt = Room(title="1505_GrahamSt", description="You are at an intersection, please go left or right"),
 
+1501_GrahamSt.save()
+1502_GrahamSt.save()
+1503_GrahamSt.save()
+1504_GrahamSt.save() 
+1505_GrahamSt.save()
 
 1601_OrchidSt = Room(title="1601_OrchidSt", description="You are currently at 1601 Orchid Street there are no bustops or intersections. Please drive forward"),
 1602_OrchidSt = Room(title="1602_OrchidSt", description="You are currently at 1602 Orchid Street there is an intersection to your right with an empty bus stop"),
@@ -159,6 +237,11 @@ from adventure.models import Player, Room
 1604_OrchidSt = Room(title="1604_OrchidSt", description="You are currently at 1604 Orchid Street there are no bustops or intersections. Please drive forward"),
 1605_OrchidSt = Room(title="1605_OrchidSt", description="You are at an intersection, please go left or right"),
 
+1601_OrchidSt.save()
+1602_OrchidSt.save()
+1603_OrchidSt.save()
+1604_OrchidSt.save()
+1605_OrchidSt.save()
 
 1701_SunriseSt = Room(title="1701_SunriseSt", description="You are currently at 1701 Sunrise Street there are no bustops or intersections. Please drive forward"),
 1702_SunriseSt = Room(title="1702_SunriseSt", description="You are currently at 1702 Sunrise Street there are no bustops or intersections. Please drive forward"),
@@ -166,6 +249,11 @@ from adventure.models import Player, Room
 1704_SunriseSt = Room(title="1704_SunriseSt", description="There is a bustop to your right with 6 people waiting"),
 1705_SunriseSt = Room(title="1705_SunriseSt", description="You are at an intersection, please go left or right"),
 
+1701_SunriseSt.save()
+1702_SunriseSt.save()
+1703_SunriseSt.save()
+1704_SunriseSt.save()
+1705_SunriseSt.save()
 
 1801_PoppySt = Room(title="1801_PoppySt", description="You are currently at 1801 Poppy Street there are no bustops or intersections. Please drive forward"),
 1802_PoppySt = Room(title="1802_PoppySt", description="You are currently at 1802 Poppy Street there is an intersection to your right with an empty bus stop"),
@@ -173,6 +261,11 @@ from adventure.models import Player, Room
 1804_PoppySt = Room(title="1804_PoppySt", description="There is a bustop to your right with 5 people waiting"),
 1805_PoppySt = Room(title="1805_PoppySt", description="You are at an intersection, please go left or right"),
 
+1801_PoppySt.save()
+1802_PoppySt.save()
+1803_PoppySt.save()
+1804_PoppySt.save()
+1805_PoppySt.save()
 
 1901_JacksonSt = Room(title="1901_JacksonSt", description="You are currently at 1901 Jackson Street there are no bustops or intersections. Please drive forward"),
 1902_JacksonSt = Room(title="1902_JacksonSt", description="You are currently at 1902 Jackson Street there is an intersection to your right with an empty bus stop"),
@@ -180,6 +273,11 @@ from adventure.models import Player, Room
 1904_JacksonSt = Room(title="1904_JacksonSt", description="We are at the airport."),
 1905_JacksonSt = Room(title="1905_JacksonSt", description="There is a bus stop to your left with 2 people waiting"),
 
+1901_JacksonSt.save()
+1902_JacksonSt.save()
+1903_JacksonSt.save()
+1904_JacksonSt.save()
+1905_JacksonSt.save()
 
 
 #for i in room:
