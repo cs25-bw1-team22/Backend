@@ -2,8 +2,12 @@ from django.contrib.auth.models import User
 from adventure.models import Player, Room, Passenger
 import random
 
+"""
+Example of how Random Works:
+
 descriptions = ["rand desc 1", "rand desc 2", "rand desc 2"]
 random(descriptoions)
+"""
 
 
 Room.object.all().delete()
@@ -21,40 +25,38 @@ Place Bus at Start (Player)
 Place Passengers
 
 """
-
-class WorldMap:
+#Create a class called "World"
+class World:
+    # instialize it with no parameters but a grid, width, and height attribute
     def __init__(self):
         self.grid = None
         self.width = 0
-        self.width = 0
+        self.height = 0
     
-    def generate_rooms(self, width, height, num_rooms):
-        self.grid = [None] * height
-        self.width = width
-        self.height = height
+    # add the ability to print the world as a string
 
-        # Initializes the grid
-        for i in range( len(self.grid) ):
-            self.grid[i] = [None] * width
-        
-        # Sets starting point
-        x = -1
-        y = 0
-        # keeps track of rooms built
-        room_count = 0 
+    # create a method that will connect the rooms:
+    #
+    # Generate Rooms:
+    # Generate Descriptions of Rooms:
+    # Generate the Map Grid (Not in Snake):
 
-        # What direction do we want to generate rooms?
+    
 
 
-        # Loop that creates all the rooms
-        previous_room = None
-        while room_count < num_rooms:
+"""
+Probably put this in Create_world.py
+Now the world needs to intialized and
+then the players need to be placed on the board.
+"""
 
-            # rooms need to some how find their neighbors
-            # and fall into place on the grid here
+# set a new instance of the World to a variable
+# call the generator and pass in 10 for width and 10 for height
+# set up the grid by looping through the width and the height
+# save the room to the database using .save()
 
 
-            # When the place on the grid is found create the room
-            room = Room()
-
-
+# set up a new instance of the players
+# for each player:
+# place them in a current room on the map
+# save the instances to the database using .save()
