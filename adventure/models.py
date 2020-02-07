@@ -39,9 +39,9 @@ class Room(models.Model):
 
 class Player(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    current_room = models.CharField(max_length=500)
+    current_room = models.CharField(max_length=500, default="DEFAULT CURRENT ROOM")
     uuid = models.UUIDField(default=uuid.uuid4, unique=True)
-    title = models.CharField(max_length=500)
+    title = models.CharField(max_length=500, default="DEFAULT TITLE")
     # commented out because it's not compiling due to models not having an ArrayField() method
     # and because it's stretch for now
     # passenger_inv = models.ArrayField(models.CharField(max_length=500))
@@ -87,22 +87,22 @@ class Player(models.Model):
                 else:
                     print("\nNot the right drop-off location\n")            
 
-class Passenger(models.Model):
-    def __init__(self, title, description):
-        self.title = title
-        self.description = description
-    def __str__(self):
-        return f"{self.title} : {self.description}"
+# class Passenger(models.Model):
+#     def __init__(self, title, description):
+#         self.title = title
+#         self.description = description
+#     def __str__(self):
+#         return f"{self.title} : {self.description}"
 
 
-    def on_take(self):
-        print(f"PICKED UP {self.title} {self.description}")
+#     def on_take(self):
+#         print(f"PICKED UP {self.title} {self.description}")
 
-    def on_drop(self):
-        print(f"DROPPED OFF {self.title}")
+#     def on_drop(self):
+#         print(f"DROPPED OFF {self.title}")
 
-    def check(self):
-        self.drop_check()
+#     def check(self):
+#         self.drop_check()
 
 @receiver(post_save, sender=User)
 def create_user_player(sender, instance, created, **kwargs):
