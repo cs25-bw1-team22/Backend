@@ -61,7 +61,14 @@ def move(request):
 
 
 @csrf_exempt
-@api_view(["POST"])
-def say(request):
-    # IMPLEMENT
-    return JsonResponse({'error':"Not yet implemented"}, safe=True, status=500)
+@api_view(["GET"])
+def map_end(request):
+    whole_map = Room.objects.all()
+        
+    return JsonResponse(whole_map)
+
+# Make endpoint to deliver room to the frontend
+# @csrf_exempt
+# @api_view(["GET"])
+# def banana(request):
+#   return JsonResponse({}) 

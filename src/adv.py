@@ -1,4 +1,4 @@
-from adventure.models import Room, Player, Passenger
+from adventure.models import Player, Room, Passenger
 
 
 
