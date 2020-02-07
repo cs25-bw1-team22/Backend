@@ -65,13 +65,12 @@ def move(request):
 def map_end(request):
     whole_map = Room.objects.all()
         
-    return JsonResponse(whole_map)
+    return JsonResponse({'map':whole_map})
 
 
-'''
+
 @csrf_exempt
 @api_view(["POST"])
 def say(request):
     # IMPLEMENT
     return JsonResponse({'error':"Not yet implemented"}, safe=True, status=500)
-'''
