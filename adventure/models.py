@@ -40,7 +40,7 @@ class Room(models.Model):
 
 class Player(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-
+    title = models.CharField(max_length=50, default="DEFAULT TITLE")
     currentRoom = models.CharField(max_length=500)
     uuid = models.UUIDField(default=uuid.uuid4, unique=True)
     #title = models.CharField(max_length=500)
@@ -103,36 +103,6 @@ class Passenger(models.Model):
         print(f"DROPPED OFF {self.title}")
 
     '''
-
-    def move_player(self, inp):
-        possible_room = self.current_room.get_room_in_direction(inp)
-            
-        if possible_room is not None:
-            self.current_room = possible_room
-            self.current_room.where_am_i()
-        
-        else:
-            print("\n"+"There is nothing in that direction"+"\n")
-
-
-    def get_passenger(self, passenger):
-        for obj in self.current_room.passengers:
-            if obj.title == passenger:
-                self.passenger_inv.append(obj)
-                self.save()
-                obj.on_take()
-                self.current_room.passengers.remove(obj)
-
-
-    def drop_passenger(self,passenger):
-        for obj in self.passenger_inv:
-            if obj.title == passenger:
-                if obj.description == self.current_room.title:
-                    self.passenger_inv.remove(obj)
-                    obj.on_drop()
-                    self.current_room.passengers.append(obj)
-                else:
-                    print("\nNot the right drop-off location\n")            
 
 # class Passenger(models.Model):
 #     def __init__(self, title, description):
