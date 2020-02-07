@@ -44,6 +44,12 @@ s913_MainSt = Room(title='913_MainSt', description="There is a bustop to your ri
 s914_MainSt = Room(title='914_MainSt', description="You are currently at 914 Main Street there are no bustops or intersections. Please drive forward")
 s915_MainSt = Room(title='915_MainSt', description="You are at an intersection, please go left or right")
 
+s911_MainSt.save()
+s912_MainSt.save()
+s913_MainSt.save()
+s914_MainSt.save()
+s915_MainSt.save()
+
 s811_SouthSt = Room(title='811_SouthSt', description="There is an empty bustop to your right.")
 s812_SouthSt = Room(title='812_SouthSt', description="You are currently at 812 South Street there are no bustops or intersections. Please drive forward")
 s813_SouthSt = Room(title='813_SouthSt', description="You are currently at 813 South Street there are no bustops or intersections. Please drive forward")
