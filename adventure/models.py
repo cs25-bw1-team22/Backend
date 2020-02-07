@@ -42,7 +42,9 @@ class Player(models.Model):
     current_room = models.CharField(max_length=500)
     uuid = models.UUIDField(default=uuid.uuid4, unique=True)
     title = models.CharField(max_length=500)
-    passenger_inv = models.ArrayField(models.CharField(max_length=500))
+    # commented out because it's not compiling due to models not having an ArrayField() method
+    # and because it's stretch for now
+    # passenger_inv = models.ArrayField(models.CharField(max_length=500))
 
     def initialize(self):
         if self.currentRoom == 0:
