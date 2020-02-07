@@ -65,7 +65,7 @@ def move(request):
 def map_end(request):
     whole_map = Room.objects.all()
         
-    return JsonResponse(whole_map)
+    return JsonResponse({'map':whole_map})
 
 # Make endpoint to deliver room to the frontend
 # @csrf_exempt
