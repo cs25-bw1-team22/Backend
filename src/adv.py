@@ -36,7 +36,7 @@ from adventure.models import Player, Room
 # for p in people:
 #     p.save()
 
-
+Room.objects.all().delete()
 
 s911_MainSt = Room(title="Starting Location", description="You are now ready to start driving. Please drive forward")
 s912_MainSt = Room(title='912_MainSt', description="You are currently at 912 Main Street there are no bustops or intersections. Please drive forward")
