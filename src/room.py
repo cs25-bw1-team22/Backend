@@ -1,4 +1,5 @@
 class Room:
+
     def __init__(self, title, description, passengers=None):
         self.title = title
         self.description = description
@@ -8,8 +9,15 @@ class Room:
         self.e_to = None
         self.w_to = None
 
+
     def where_am_i(self):
         print(f"***********************\n\t\t{self.title}\n\n\t{self.description}\n***********************")
+
+        
+
+    def where_am_i(self):
+        print(f"********************************************************************************************************\n{self.title}\n\n\t{self.description}\n********************************************************************************************************")
+
         self.list_passengers()
         
     
@@ -28,3 +36,10 @@ class Room:
         if hasattr(self, f"{direction}_to"):
             return getattr(self, f"{direction}_to")
         return None
+
+    def drop_check(self):
+        return self.title
+    
+    def room_save():
+        self.save()
+

@@ -8,3 +8,4 @@ class Passenger:
 
     def on_take(self):
         print(f"PICKED UP {self.title} {self.description}")
+

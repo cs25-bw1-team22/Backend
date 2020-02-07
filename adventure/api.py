@@ -68,7 +68,6 @@ def map_end(request):
     return JsonResponse({'map':whole_map})
 
 
-
 @csrf_exempt
 @api_view(["POST"])
 def say(request):
