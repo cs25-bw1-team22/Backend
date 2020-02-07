@@ -189,262 +189,262 @@ room = {
 
 }
 
-room['911_MainSt'].n_to = room['912_MainSt']
-room['912_MainSt'].n_to = room['913_MainSt']
-room['913_MainSt'].n_to = room['914_MainSt']
-room['914_MainSt'].n_to = room['915_MainSt']
+room['911_MainSt'].connectRooms(room['912_MainSt'], n_to)
+room['912_MainSt'].connectRooms(room['913_MainSt'], n_to)
+room['913_MainSt'].connectRooms(room['914_MainSt'], n_to)
+room['914_MainSt'].connectRooms(room['915_MainSt'], n_to)
 
-room['915_MainSt'].s_to = room['914_MainSt']
-room['914_MainSt'].s_to = room['913_MainSt']
-room['913_MainSt'].s_to = room['912_MainSt']
-room['912_MainSt'].s_to = room['911_MainSt']
+room['915_MainSt'].connectRooms(room['914_MainSt'], s_to)
+room['914_MainSt'].connectRooms(room['913_MainSt'], s_to)
+room['913_MainSt'].connectRooms(room['912_MainSt'], s_to)
+room['912_MainSt'].connectRooms(room['911_MainSt'], s_to)
 
-room['915_MainSt'].e_to = room['811_SouthSt']
-room['811_SouthSt'].w_to = room['915_MainSt']
+room['915_MainSt'].connectRooms(room['811_SouthSt'], e_to)
+room['811_SouthSt'].connectRooms(room['915_MainSt'], w_to)
 
-room['811_SouthSt'].n_to = room['812_SouthSt']
-room['812_SouthSt'].n_to = room['813_SouthSt']
-room['813_SouthSt'].n_to = room['814_SouthSt']
-room['814_SouthSt'].n_to = room['815_SouthSt']
+room['811_SouthSt'].connectRooms(room['812_SouthSt'], n_to)
+room['812_SouthSt'].connectRooms(room['813_SouthSt'], n_to)
+room['813_SouthSt'].connectRooms(room['814_SouthSt'], n_to)
+room['814_SouthSt'].connectRooms(room['815_SouthSt'], n_to)
 
-room['815_SouthSt'].s_to = room['814_SouthSt']
-room['814_SouthSt'].s_to = room['813_SouthSt']
-room['813_SouthSt'].s_to = room['812_SouthSt']
-room['812_SouthSt'].s_to = room['811_SouthSt']
+room['815_SouthSt'].connectRooms(room['814_SouthSt'], s_to)
+room['814_SouthSt'].connectRooms(room['813_SouthSt'], s_to)
+room['813_SouthSt'].connectRooms(room['812_SouthSt'], s_to)
+room['812_SouthSt'].connectRooms(room['811_SouthSt'], s_to)
 
-room['815_SouthSt'].w_to = room['711_FrontSt']
-room['711_FrontSt'].e_to = room['815_SouthSt']
+room['815_SouthSt'].connectRooms(room['711_FrontSt'], w_to)
+room['711_FrontSt'].connectRooms(room['815_SouthSt'], e_to)
 
-room['711_FrontSt'].n_to = room['712_FrontSt']
-room['712_FrontSt'].n_to = room['713_FrontSt']
-room['713_FrontSt'].n_to = room['714_FrontSt']
-room['714_FrontSt'].n_to = room['715_FrontSt']
+room['711_FrontSt'].connectRooms(room['712_FrontSt'], n_to)
+room['712_FrontSt'].connectRooms(room['713_FrontSt'], n_to)
+room['713_FrontSt'].connectRooms(room['714_FrontSt'], n_to)
+room['714_FrontSt'].connectRooms(room['715_FrontSt'], n_to)
 
-room['715_FrontSt'].s_to = room['714_FrontSt']
-room['714_FrontSt'].s_to = room['713_FrontSt']
-room['713_FrontSt'].s_to = room['712_FrontSt']
-room['712_FrontSt'].s_to = room['711_FrontSt']
+room['715_FrontSt'].connectRooms(room['714_FrontSt'], s_to)
+room['714_FrontSt'].connectRooms(room['713_FrontSt'], s_to)
+room['713_FrontSt'].connectRooms(room['712_FrontSt'], s_to)
+room['712_FrontSt'].connectRooms(room['711_FrontSt'], s_to)
 
-room['715_FrontSt'].e_to = room['611_GrapeSt']
-room['611_GrapeSt'].w_to = room['715_FrontSt']
+room['715_FrontSt'].connectRooms(room['611_GrapeSt'], e_to)
+room['611_GrapeSt'].connectRooms(room['715_FrontSt'], w_to)
 
-room['611_GrapeSt'].n_to = room['612_GrapeSt']
-room['612_GrapeSt'].n_to = room['613_GrapeSt']
-room['613_GrapeSt'].n_to = room['614_GrapeSt']
-room['614_GrapeSt'].n_to = room['615_GrapeSt']
+room['611_GrapeSt'].connectRooms(room['612_GrapeSt'], n_to)
+room['612_GrapeSt'].connectRooms(room['613_GrapeSt'], n_to)
+room['613_GrapeSt'].connectRooms(room['614_GrapeSt'], n_to)
+room['614_GrapeSt'].connectRooms(room['615_GrapeSt'], n_to)
 
-room['615_GrapeSt'].s_to = room['614_GrapeSt']
-room['614_GrapeSt'].s_to = room['613_GrapeSt']
-room['613_GrapeSt'].s_to = room['612_GrapeSt']
-room['612_GrapeSt'].s_to = room['611_GrapeSt']
+room['615_GrapeSt'].connectRooms(room['614_GrapeSt'], s_to)
+room['614_GrapeSt'].connectRooms(room['613_GrapeSt'], s_to)
+room['613_GrapeSt'].connectRooms(room['612_GrapeSt'], s_to)
+room['612_GrapeSt'].connectRooms(room['611_GrapeSt'], s_to)
 
-room['615_GrapeSt'].e_to = room['511_ParkSt']
-room['511_ParkSt'].w_to = room['615_GrapeSt']
+room['615_GrapeSt'].connectRooms(room['511_ParkSt'], e_to)
+room['511_ParkSt'].connectRooms(room['615_GrapeSt'], w_to)
 
-room['511_ParkSt'].n_to = room['512_ParkSt']
-room['512_ParkSt'].n_to = room['513_ParkSt']
-room['513_ParkSt'].n_to = room['514_ParkSt']
-room['514_ParkSt'].n_to = room['515_ParkSt']
+room['511_ParkSt'].connectRooms(room['512_ParkSt'], n_to)
+room['512_ParkSt'].connectRooms(room['513_ParkSt'], n_to)
+room['513_ParkSt'].connectRooms(room['514_ParkSt'], n_to)
+room['514_ParkSt'].connectRooms(room['515_ParkSt'], n_to)
 
-room['515_ParkSt'].s_to = room['514_ParkSt']
-room['514_ParkSt'].s_to = room['513_ParkSt']
-room['513_ParkSt'].s_to = room['512_ParkSt']
-room['512_ParkSt'].s_to = room['511_ParkSt']
+room['515_ParkSt'].connectRooms(room['514_ParkSt'], s_to)
+room['514_ParkSt'].connectRooms(room['513_ParkSt'], s_to)
+room['513_ParkSt'].connectRooms(room['512_ParkSt'], s_to)
+room['512_ParkSt'].connectRooms(room['511_ParkSt'], s_to)
 
-room['515_ParkSt'].w_to = room['411_LakeSt']
-room['411_LakeSt'].e_to = room['515_ParkSt']
+room['515_ParkSt'].connectRooms(room['411_LakeSt'], w_to)
+room['411_LakeSt'].connectRooms(room['515_ParkSt'], e_to)
 
-room['411_LakeSt'].n_to = room['412_LakeSt']
-room['412_LakeSt'].n_to = room['413_LakeSt']
-room['413_LakeSt'].n_to = room['414_LakeSt']
-room['414_LakeSt'].n_to = room['415_LakeSt']
+room['411_LakeSt'].connectRooms(room['412_LakeSt'], n_to)
+room['412_LakeSt'].connectRooms(room['413_LakeSt'], n_to)
+room['413_LakeSt'].connectRooms(room['414_LakeSt'], n_to)
+room['414_LakeSt'].connectRooms(room['415_LakeSt'], n_to)
 
-room['415_LakeSt'].s_to = room['414_LakeSt']
-room['414_LakeSt'].s_to = room['413_LakeSt']
-room['413_LakeSt'].s_to = room['412_LakeSt']
-room['412_LakeSt'].s_to = room['411_LakeSt']
+room['415_LakeSt'].connectRooms(room['414_LakeSt'], s_to)
+room['414_LakeSt'].connectRooms(room['413_LakeSt'], s_to)
+room['413_LakeSt'].connectRooms(room['412_LakeSt'], s_to)
+room['412_LakeSt'].connectRooms(room['411_LakeSt'], s_to)
 
-room['415_LakeSt'].e_to = room['311_MagnoliaSt']
-room['311_MagnoliaSt'].w_to = room['415_LakeSt']
+room['415_LakeSt'].connectRooms(room['311_MagnoliaSt'], e_to)
+room['311_MagnoliaSt'].connectRooms(room['415_LakeSt'], w_to)
 
-room['311_MagnoliaSt'].n_to = room['312_MagnoliaSt']
-room['312_MagnoliaSt'].n_to = room['313_MagnoliaSt']
-room['313_MagnoliaSt'].n_to = room['314_MagnoliaSt']
-room['314_MagnoliaSt'].n_to = room['315_MagnoliaSt']
+room['311_MagnoliaSt'].connectRooms(room['312_MagnoliaSt'], n_to)
+room['312_MagnoliaSt'].connectRooms(room['313_MagnoliaSt'], n_to)
+room['313_MagnoliaSt'].connectRooms(room['314_MagnoliaSt'], n_to)
+room['314_MagnoliaSt'].connectRooms(room['315_MagnoliaSt'], n_to)
 
-room['315_MagnoliaSt'].s_to = room['314_MagnoliaSt']
-room['314_MagnoliaSt'].s_to = room['313_MagnoliaSt']
-room['313_MagnoliaSt'].s_to = room['312_MagnoliaSt']
-room['312_MagnoliaSt'].s_to = room['311_MagnoliaSt']
+room['315_MagnoliaSt'].connectRooms(room['314_MagnoliaSt'], s_to)
+room['314_MagnoliaSt'].connectRooms(room['313_MagnoliaSt'], s_to)
+room['313_MagnoliaSt'].connectRooms(room['312_MagnoliaSt'], s_to)
+room['312_MagnoliaSt'].connectRooms(room['311_MagnoliaSt'], s_to)
 
-room['315_MagnoliaSt'].w_to = room['211_SunsetSt']
-room['211_SunsetSt'].e_to = room['315_MagnoliaSt']
+room['315_MagnoliaSt'].connectRooms(room['211_SunsetSt'], w_to)
+room['211_SunsetSt'].connectRooms(room['315_MagnoliaSt'], e_to)
 
-room['211_SunsetSt'].n_to = room['212_SunsetSt']
-room['212_SunsetSt'].n_to = room['213_SunsetSt']
-room['213_SunsetSt'].n_to = room['214_SunsetSt']
-room['214_SunsetSt'].n_to = room['215_SunsetSt']
+room['211_SunsetSt'].connectRooms(room['212_SunsetSt'], n_to)
+room['212_SunsetSt'].connectRooms(room['213_SunsetSt'], n_to)
+room['213_SunsetSt'].connectRooms(room['214_SunsetSt'], n_to)
+room['214_SunsetSt'].connectRooms(room['215_SunsetSt'], n_to)
 
-room['215_SunsetSt'].s_to = room['214_SunsetSt']
-room['214_SunsetSt'].s_to = room['213_SunsetSt']
-room['213_SunsetSt'].s_to = room['212_SunsetSt']
-room['212_SunsetSt'].s_to = room['211_SunsetSt']
+room['215_SunsetSt'].connectRooms(room['214_SunsetSt'], s_to)
+room['214_SunsetSt'].connectRooms(room['213_SunsetSt'], s_to)
+room['213_SunsetSt'].connectRooms(room['212_SunsetSt'], s_to)
+room['212_SunsetSt'].connectRooms(room['211_SunsetSt'], s_to)
 
-room['215_SunsetSt'].w_to = room['111_ApacheSt']
-room['111_ApacheSt'].e_to = room['215_SunsetSt']
+room['215_SunsetSt'].connectRooms(room['111_ApacheSt'], w_to)
+room['111_ApacheSt'].connectRooms(room['215_SunsetSt'], e_to)
 
-room['111_ApacheSt'].n_to = room['112_ApacheSt']
-room['112_ApacheSt'].n_to = room['113_ApacheSt']
-room['113_ApacheSt'].n_to = room['114_ApacheSt']
-room['114_ApacheSt'].n_to = room['115_ApacheSt']
+room['111_ApacheSt'].connectRooms(room['112_ApacheSt'], n_to)
+room['112_ApacheSt'].connectRooms(room['113_ApacheSt'], n_to)
+room['113_ApacheSt'].connectRooms(room['114_ApacheSt'], n_to)
+room['114_ApacheSt'].connectRooms(room['115_ApacheSt'], n_to)
 
-room['115_ApacheSt'].s_to = room['114_ApacheSt']
-room['114_ApacheSt'].s_to = room['113_ApacheSt']
-room['113_ApacheSt'].s_to = room['112_ApacheSt']
-room['112_ApacheSt'].s_to = room['111_ApacheSt']
+room['115_ApacheSt'].connectRooms(room['114_ApacheSt'], s_to)
+room['114_ApacheSt'].connectRooms(room['113_ApacheSt'], s_to)
+room['113_ApacheSt'].connectRooms(room['112_ApacheSt'], s_to)
+room['112_ApacheSt'].connectRooms(room['111_ApacheSt'], s_to)
 
-room['115_ApacheSt'].e_to = room['011_AirportSt']
-room['011_AirportSt'].w_to = room['115_ApacheSt']
+room['115_ApacheSt'].connectRooms(room['011_AirportSt'], e_to)
+room['011_AirportSt'].connectRooms(room['115_ApacheSt'], w_to)
 
-room['011_AirportSt'].n_to = room['012_AirportSt']
-room['012_AirportSt'].n_to = room['013_AirportSt']
-room['013_AirportSt'].n_to = room['014_AirportSt']
-room['014_AirportSt'].n_to = room['015_AirportSt']
+room['011_AirportSt'].connectRooms(room['012_AirportSt'], n_to)
+room['012_AirportSt'].connectRooms(room['013_AirportSt'], n_to)
+room['013_AirportSt'].connectRooms(room['014_AirportSt'], n_to)
+room['014_AirportSt'].connectRooms(room['015_AirportSt'], n_to)
 
-room['015_AirportSt'].s_to = room['014_AirportSt']
-room['014_AirportSt'].s_to = room['013_AirportSt']
-room['013_AirportSt'].s_to = room['012_AirportSt']
-room['012_AirportSt'].s_to = room['011_AirportSt']
+room['015_AirportSt'].connectRooms(room['014_AirportSt'], s_to)
+room['014_AirportSt'].connectRooms(room['013_AirportSt'], s_to)
+room['013_AirportSt'].connectRooms(room['012_AirportSt'], s_to)
+room['012_AirportSt'].connectRooms(room['011_AirportSt'], s_to)
 
-room['015_AirportSt'].w_to = room['1001_DrewSt']
-room['1001_DrewSt'].e_to = room['015_AirportSt']
+room['015_AirportSt'].connectRooms(room['1001_DrewSt'], w_to)
+room['1001_DrewSt'].connectRooms(room['015_AirportSt'], e_to)
 
-room['1001_DrewSt'].n_to = room['1002_DrewSt']
-room['1002_DrewSt'].n_to = room['1003_DrewSt']
-room['1003_DrewSt'].n_to = room['1004_DrewSt']
-room['1004_DrewSt'].n_to = room['1005_DrewSt']
+room['1001_DrewSt'].connectRooms(room['1002_DrewSt'], n_to)
+room['1002_DrewSt'].connectRooms(room['1003_DrewSt'], n_to)
+room['1003_DrewSt'].connectRooms(room['1004_DrewSt'], n_to)
+room['1004_DrewSt'].connectRooms(room['1005_DrewSt'], n_to)
 
-room['1005_DrewSt'].s_to = room['1004_DrewSt']
-room['1004_DrewSt'].s_to = room['1003_DrewSt']
-room['1003_DrewSt'].s_to = room['1002_DrewSt']
-room['1002_DrewSt'].s_to = room['1001_DrewSt']
+room['1005_DrewSt'].connectRooms(room['1004_DrewSt'], s_to)
+room['1004_DrewSt'].connectRooms(room['1003_DrewSt'], s_to)
+room['1003_DrewSt'].connectRooms(room['1002_DrewSt'], s_to)
+room['1002_DrewSt'].connectRooms(room['1001_DrewSt'], s_to)
 
-room['1005_DrewSt'].e_to = room['1101_MangoSt']
-room['1101_MangoSt'].w_to = room['1005_DrewSt']
+room['1005_DrewSt'].connectRooms(room['1101_MangoSt'], e_to)
+room['1101_MangoSt'].connectRooms(room['1005_DrewSt'], w_to)
 
-room['1101_MangoSt'].n_to = room['1102_MangoSt']
-room['1102_MangoSt'].n_to = room['1103_MangoSt']
-room['1103_MangoSt'].n_to = room['1104_MangoSt']
-room['1104_MangoSt'].n_to = room['1105_MangoSt']
+room['1101_MangoSt'].connectRooms(room['1102_MangoSt'], n_to)
+room['1102_MangoSt'].connectRooms(room['1103_MangoSt'], n_to)
+room['1103_MangoSt'].connectRooms(room['1104_MangoSt'], n_to)
+room['1104_MangoSt'].connectRooms(room['1105_MangoSt'], n_to)
 
-room['1105_MangoSt'].s_to = room['1104_MangoSt']
-room['1104_MangoSt'].s_to = room['1103_MangoSt']
-room['1103_MangoSt'].s_to = room['1102_MangoSt']
-room['1102_MangoSt'].s_to = room['1101_MangoSt']
+room['1105_MangoSt'].connectRooms(room['1104_MangoSt'], s_to)
+room['1104_MangoSt'].connectRooms(room['1103_MangoSt'], s_to)
+room['1103_MangoSt'].connectRooms(room['1102_MangoSt'], s_to)
+room['1102_MangoSt'].connectRooms(room['1101_MangoSt'], s_to)
 
-room['1105_MangoSt'].w_to = room['1201_WashingtonSt']
-room['1201_WashingtonSt'].e_to = room['1105_MangoSt']
+room['1105_MangoSt'].connectRooms(room['1201_WashingtonSt'], w_to)
+room['1201_WashingtonSt'].connectRooms(room['1105_MangoSt'], e_to)
 
-room['1201_WashingtonSt'].n_to = room['1202_WashingtonSt']
-room['1202_WashingtonSt'].n_to = room['1203_WashingtonSt']
-room['1203_WashingtonSt'].n_to = room['1204_WashingtonSt']
-room['1204_WashingtonSt'].n_to = room['1205_WashingtonSt']
+room['1201_WashingtonSt'].connectRooms(room['1202_WashingtonSt'], n_to)
+room['1202_WashingtonSt'].connectRooms(room['1203_WashingtonSt'], n_to)
+room['1203_WashingtonSt'].connectRooms(room['1204_WashingtonSt'], n_to)
+room['1204_WashingtonSt'].connectRooms(room['1205_WashingtonSt'], n_to)
 
-room['1205_WashingtonSt'].s_to = room['1204_WashingtonSt']
-room['1204_WashingtonSt'].s_to = room['1203_WashingtonSt']
-room['1203_WashingtonSt'].s_to = room['1202_WashingtonSt']
-room['1202_WashingtonSt'].s_to = room['1201_WashingtonSt']
+room['1205_WashingtonSt'].connectRooms(room['1204_WashingtonSt'], s_to)
+room['1204_WashingtonSt'].connectRooms(room['1203_WashingtonSt'], s_to)
+room['1203_WashingtonSt'].connectRooms(room['1202_WashingtonSt'], s_to)
+room['1202_WashingtonSt'].connectRooms(room['1201_WashingtonSt'], s_to)
 
-room['1205_WashingtonSt'].e_to = room['1301_LincolnSt']
-room['1301_LincolnSt'].w_to = room['1205_WashingtonSt']
+room['1205_WashingtonSt'].connectRooms(room['1301_LincolnSt'], e_to)
+room['1301_LincolnSt'].connectRooms(room['1205_WashingtonSt'], w_to)
 
-room['1301_LincolnSt'].n_to = room['1302_LincolnSt']
-room['1302_LincolnSt'].n_to = room['1303_LincolnSt']
-room['1303_LincolnSt'].n_to = room['1304_LincolnSt']
-room['1304_LincolnSt'].n_to = room['1305_LincolnSt']
+room['1301_LincolnSt'].connectRooms(room['1302_LincolnSt'], n_to)
+room['1302_LincolnSt'].connectRooms(room['1303_LincolnSt'], n_to)
+room['1303_LincolnSt'].connectRooms(room['1304_LincolnSt'], n_to)
+room['1304_LincolnSt'].connectRooms(room['1305_LincolnSt'], n_to)
 
-room['1305_LincolnSt'].s_to = room['1304_LincolnSt']
-room['1304_LincolnSt'].s_to = room['1303_LincolnSt']
-room['1303_LincolnSt'].s_to = room['1302_LincolnSt']
-room['1302_LincolnSt'].s_to = room['1301_LincolnSt']
+room['1305_LincolnSt'].connectRooms(room['1304_LincolnSt'], s_to)
+room['1304_LincolnSt'].connectRooms(room['1303_LincolnSt'], s_to)
+room['1303_LincolnSt'].connectRooms(room['1302_LincolnSt'], s_to)
+room['1302_LincolnSt'].connectRooms(room['1301_LincolnSt'], s_to)
 
-room['1305_LincolnSt'].e_to = room['1401_HamiltonSt']
-room['1401_HamiltonSt'].w_to = room['1305_LincolnSt']
+room['1305_LincolnSt'].connectRooms(room['1401_HamiltonSt'], e_to)
+room['1401_HamiltonSt'].connectRooms(room['1305_LincolnSt'], w_to)
 
-room['1401_HamiltonSt'].n_to = room['1402_HamiltonSt']
-room['1402_HamiltonSt'].n_to = room['1403_HamiltonSt']
-room['1403_HamiltonSt'].n_to = room['1404_HamiltonSt']
-room['1404_HamiltonSt'].n_to = room['1405_HamiltonSt']
+room['1401_HamiltonSt'].connectRooms(room['1402_HamiltonSt'], n_to)
+room['1402_HamiltonSt'].connectRooms(room['1403_HamiltonSt'], n_to)
+room['1403_HamiltonSt'].connectRooms(room['1404_HamiltonSt'], n_to)
+room['1404_HamiltonSt'].connectRooms(room['1405_HamiltonSt'], n_to)
 
-room['1405_HamiltonSt'].s_to = room['1404_HamiltonSt']
-room['1404_HamiltonSt'].s_to = room['1403_HamiltonSt']
-room['1403_HamiltonSt'].s_to = room['1402_HamiltonSt']
-room['1402_HamiltonSt'].s_to = room['1401_HamiltonSt']
+room['1405_HamiltonSt'].connectRooms(room['1404_HamiltonSt'], s_to)
+room['1404_HamiltonSt'].connectRooms(room['1403_HamiltonSt'], s_to)
+room['1403_HamiltonSt'].connectRooms(room['1402_HamiltonSt'], s_to)
+room['1402_HamiltonSt'].connectRooms(room['1401_HamiltonSt'], s_to)
 
-room['1405_HamiltonSt'].w_to = room['1501_GrahamSt']
-room['1501_GrahamSt'].e_to = room['1405_HamiltonSt']
+room['1405_HamiltonSt'].connectRooms(room['1501_GrahamSt'], w_to)
+room['1501_GrahamSt'].connectRooms(room['1405_HamiltonSt'], e_to)
 
-room['1501_GrahamSt'].n_to = room['1502_GrahamSt']
-room['1502_GrahamSt'].n_to = room['1503_GrahamSt']
-room['1503_GrahamSt'].n_to = room['1504_GrahamSt']
-room['1504_GrahamSt'].n_to = room['1505_GrahamSt']
+room['1501_GrahamSt'].connectRooms(room['1502_GrahamSt'], n_to)
+room['1502_GrahamSt'].connectRooms(room['1503_GrahamSt'], n_to)
+room['1503_GrahamSt'].connectRooms(room['1504_GrahamSt'], n_to)
+room['1504_GrahamSt'].connectRooms(room['1505_GrahamSt'], n_to)
 
-room['1505_GrahamSt'].s_to = room['1504_GrahamSt']
-room['1504_GrahamSt'].s_to = room['1503_GrahamSt']
-room['1503_GrahamSt'].s_to = room['1502_GrahamSt']
-room['1502_GrahamSt'].s_to = room['1501_GrahamSt']
+room['1505_GrahamSt'].connectRooms(room['1504_GrahamSt'], s_to)
+room['1504_GrahamSt'].connectRooms(room['1503_GrahamSt'], s_to)
+room['1503_GrahamSt'].connectRooms(room['1502_GrahamSt'], s_to)
+room['1502_GrahamSt'].connectRooms(room['1501_GrahamSt'], s_to)
 
-room['1505_GrahamSt'].e_to = room['1601_OrchidSt']
-room['1601_OrchidSt'].w_to = room['1505_GrahamSt']
+room['1505_GrahamSt'].connectRooms(room['1601_OrchidSt'], e_to)
+room['1601_OrchidSt'].connectRooms(room['1505_GrahamSt'], w_to)
 
-room['1601_OrchidSt'].n_to = room['1602_OrchidSt']
-room['1602_OrchidSt'].n_to = room['1603_OrchidSt']
-room['1603_OrchidSt'].n_to = room['1604_OrchidSt']
-room['1604_OrchidSt'].n_to = room['1605_OrchidSt']
+room['1601_OrchidSt'].connectRooms(room['1602_OrchidSt'], n_to)
+room['1602_OrchidSt'].connectRooms(room['1603_OrchidSt'], n_to)
+room['1603_OrchidSt'].connectRooms(room['1604_OrchidSt'], n_to)
+room['1604_OrchidSt'].connectRooms(room['1605_OrchidSt'], n_to)
 
-room['1605_OrchidSt'].s_to = room['1604_OrchidSt']
-room['1604_OrchidSt'].s_to = room['1603_OrchidSt']
-room['1603_OrchidSt'].s_to = room['1602_OrchidSt']
-room['1602_OrchidSt'].s_to = room['1601_OrchidSt']
+room['1605_OrchidSt'].connectRooms(room['1604_OrchidSt'], s_to)
+room['1604_OrchidSt'].connectRooms(room['1603_OrchidSt'], s_to)
+room['1603_OrchidSt'].connectRooms(room['1602_OrchidSt'], s_to)
+room['1602_OrchidSt'].connectRooms(room['1601_OrchidSt'], s_to)
 
-room['1605_OrchidSt'].w_to = room['1701_SunriseSt']
-room['1701_SunriseSt'].e_to = room['1605_OrchidSt']
+room['1605_OrchidSt'].connectRooms(room['1701_SunriseSt'], w_to)
+room['1701_SunriseSt'].connectRooms(room['1605_OrchidSt'], e_to)
 
-room['1701_SunriseSt'].n_to = room['1702_SunriseSt']
-room['1702_SunriseSt'].n_to = room['1703_SunriseSt']
-room['1703_SunriseSt'].n_to = room['1704_SunriseSt']
-room['1704_SunriseSt'].n_to = room['1705_SunriseSt']
+room['1701_SunriseSt'].connectRooms(room['1702_SunriseSt'], n_to)
+room['1702_SunriseSt'].connectRooms(room['1703_SunriseSt'], n_to)
+room['1703_SunriseSt'].connectRooms(room['1704_SunriseSt'], n_to)
+room['1704_SunriseSt'].connectRooms(room['1705_SunriseSt'], n_to)
 
-room['1705_SunriseSt'].s_to = room['1704_SunriseSt']
-room['1704_SunriseSt'].s_to = room['1703_SunriseSt']
-room['1703_SunriseSt'].s_to = room['1702_SunriseSt']
-room['1702_SunriseSt'].s_to = room['1701_SunriseSt']
+room['1705_SunriseSt'].connectRooms(room['1704_SunriseSt'], s_to)
+room['1704_SunriseSt'].connectRooms(room['1703_SunriseSt'], s_to)
+room['1703_SunriseSt'].connectRooms(room['1702_SunriseSt'], s_to)
+room['1702_SunriseSt'].connectRooms(room['1701_SunriseSt'], s_to)
 
-room['1705_SunriseSt'].w_to = room['1801_PoppySt']
-room['1801_PoppySt'].e_to = room['1705_SunriseSt']
+room['1705_SunriseSt'].connectRooms(room['1801_PoppySt'], w_to)
+room['1801_PoppySt'].connectRooms(room['1705_SunriseSt'], e_to)
 
-room['1801_PoppySt'].n_to = room['1802_PoppySt']
-room['1802_PoppySt'].n_to = room['1803_PoppySt']
-room['1803_PoppySt'].n_to = room['1804_PoppySt']
-room['1804_PoppySt'].n_to = room['1805_PoppySt']
+room['1801_PoppySt'].connectRooms(room['1802_PoppySt'], n_to)
+room['1802_PoppySt'].connectRooms(room['1803_PoppySt'], n_to)
+room['1803_PoppySt'].connectRooms(room['1804_PoppySt'], n_to)
+room['1804_PoppySt'].connectRooms(room['1805_PoppySt'], n_to)
 
-room['1805_PoppySt'].s_to = room['1804_PoppySt']
-room['1804_PoppySt'].s_to = room['1803_PoppySt']
-room['1803_PoppySt'].s_to = room['1802_PoppySt']
-room['1802_PoppySt'].s_to = room['1801_PoppySt']
+room['1805_PoppySt'].connectRooms(room['1804_PoppySt'], s_to)
+room['1804_PoppySt'].connectRooms(room['1803_PoppySt'], s_to)
+room['1803_PoppySt'].connectRooms(room['1802_PoppySt'], s_to)
+room['1802_PoppySt'].connectRooms(room['1801_PoppySt'], s_to)
 
-room['1805_PoppySt'].e_to = room['1901_JacksonSt']
-room['1901_JacksonSt'].w_to = room['1805_PoppySt']
+room['1805_PoppySt'].connectRooms(room['1901_JacksonSt'], e_to)
+room['1901_JacksonSt'].connectRooms(room['1805_PoppySt'], w_to)
 
-room['1901_JacksonSt'].n_to = room['1902_JacksonSt']
-room['1902_JacksonSt'].n_to = room['1903_JacksonSt']
-room['1903_JacksonSt'].n_to = room['1904_JacksonSt']
-room['1904_JacksonSt'].n_to = room['1905_JacksonSt']
+room['1901_JacksonSt'].connectRooms(room['1902_JacksonSt'], n_to)
+room['1902_JacksonSt'].connectRooms(room['1903_JacksonSt'], n_to)
+room['1903_JacksonSt'].connectRooms(room['1904_JacksonSt'], n_to)
+room['1904_JacksonSt'].connectRooms(room['1905_JacksonSt'], n_to)
 
-room['1905_JacksonSt'].s_to = room['1904_JacksonSt']
-room['1904_JacksonSt'].s_to = room['1903_JacksonSt']
-room['1903_JacksonSt'].s_to = room['1902_JacksonSt']
-room['1902_JacksonSt'].s_to = room['1901_JacksonSt']
+room['1905_JacksonSt'].connectRooms(room['1904_JacksonSt'], s_to)
+room['1904_JacksonSt'].connectRooms(room['1903_JacksonSt'], s_to)
+room['1903_JacksonSt'].connectRooms(room['1902_JacksonSt'], s_to)
+room['1902_JacksonSt'].connectRooms(room['1901_JacksonSt'], s_to)
 
 move_map = {
     "n": "n_to",
