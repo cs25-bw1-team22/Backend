@@ -1,42 +1,42 @@
-from adventure.models import Player, Room, Passenger
+from adventure.models import Player, Room
 
 
 
-people = {
-'Jahmir' : Passenger("Jahmir", "811_SouthSt"),
-'Zakariya' : Passenger("Zakariya", "414_LakeSt"),
-'Amaria' : Passenger("Amaria", "414_LakeSt"),
-'Melvin' : Passenger("Melvin", "414_LakeSt"),
-'Naraly' : Passenger("Naraly", "414_LakeSt"),
+# people = {
+# 'Jahmir' : Passenger("Jahmir", "811_SouthSt"),
+# 'Zakariya' : Passenger("Zakariya", "414_LakeSt"),
+# 'Amaria' : Passenger("Amaria", "414_LakeSt"),
+# 'Melvin' : Passenger("Melvin", "414_LakeSt"),
+# 'Naraly' : Passenger("Naraly", "414_LakeSt"),
 
-'Shiro' : Passenger("Shiro","612_GrapeSt"),
-'Zelma' : Passenger("Zelma", "012_AirportSt"),
-'Roxen' : Passenger("Roxen", "014_AirportSt"),
-'Allaina' : Passenger("Allaina", "514_ParkSt"),
-'Urban' : Passenger("Urban", "514_ParkSt"),
+# 'Shiro' : Passenger("Shiro","612_GrapeSt"),
+# 'Zelma' : Passenger("Zelma", "012_AirportSt"),
+# 'Roxen' : Passenger("Roxen", "014_AirportSt"),
+# 'Allaina' : Passenger("Allaina", "514_ParkSt"),
+# 'Urban' : Passenger("Urban", "514_ParkSt"),
 
-'Ayliana' : Passenger("Ayliana", ""),
-'Wallis' : Passenger("Wallis", "312_MagnoliaSt"),
-'Usman': Passenger("Usman", "312_MagnoliaSt"),
-'Meral': Passenger("Meral", "414_LakeSt"),
-'Angeliz' : Passenger("Angeliz", "014_AirportSt"),
+# 'Ayliana' : Passenger("Ayliana", ""),
+# 'Wallis' : Passenger("Wallis", "312_MagnoliaSt"),
+# 'Usman': Passenger("Usman", "312_MagnoliaSt"),
+# 'Meral': Passenger("Meral", "414_LakeSt"),
+# 'Angeliz' : Passenger("Angeliz", "014_AirportSt"),
 
-'Milagrace' : Passenger("Milagrace", "012_AirportSt"),
-'Alyssia' : Passenger("Alyssia", "514_ParkSt"),
-'Manelyk': Passenger("Manelyk", "811_SouthSt"),
-'Aariyah': Passenger("Aariyah", ""),
-'Torryn' : Passenger("Torryn", ""),
+# 'Milagrace' : Passenger("Milagrace", "012_AirportSt"),
+# 'Alyssia' : Passenger("Alyssia", "514_ParkSt"),
+# 'Manelyk': Passenger("Manelyk", "811_SouthSt"),
+# 'Aariyah': Passenger("Aariyah", ""),
+# 'Torryn' : Passenger("Torryn", ""),
 
-'Hanny' : Passenger("Hanny", "014_AirportSt"),
-'Breslin' : Passenger("Breslin", "012_AirportSt"),
-'Sofiya': Passenger("Sofiya", "014_AirportSt"),
-'Kalayla': Passenger("Kalayla", "612_GrapeSt"),
-'Khylei' : Passenger("Khylei", ""),
+# 'Hanny' : Passenger("Hanny", "014_AirportSt"),
+# 'Breslin' : Passenger("Breslin", "012_AirportSt"),
+# 'Sofiya': Passenger("Sofiya", "014_AirportSt"),
+# 'Kalayla': Passenger("Kalayla", "612_GrapeSt"),
+# 'Khylei' : Passenger("Khylei", ""),
 
-}
+# }
 
-for p in people:
-    p.save()
+# for p in people:
+#     p.save()
 
 room = {
 
