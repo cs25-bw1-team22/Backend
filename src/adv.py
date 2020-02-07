@@ -186,8 +186,8 @@ room = {
 
 }
 
-for i in room:
-    i.save()
+#for i in room:
+ #   i.save()
 
 room['911_MainSt'].connectRooms(room['912_MainSt'], n_to)
 room['912_MainSt'].connectRooms(room['913_MainSt'], n_to)
