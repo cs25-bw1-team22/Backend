@@ -241,7 +241,7 @@ move_map = {
 move_list = ['n', 'e', 's', 'w']
 action_list = ['pickup', 'dropoff']
 
-
+'''
 player_1 = Player("Buzz", room["911_MainSt"])
 
 while True:
@@ -284,5 +284,5 @@ while True:
 
         else:
             print("\nDid not recognize that command")
-
+'''
     

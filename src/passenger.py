@@ -8,9 +8,3 @@ class Passenger:
 
     def on_take(self):
         print(f"PICKED UP {self.title} {self.description}")
-
-    def on_drop(self):
-        print(f"DROPPED OFF {self.title}")
-
-    def check(self):
-        self.drop_check()

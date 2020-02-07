@@ -28,6 +28,3 @@ class Room:
         if hasattr(self, f"{direction}_to"):
             return getattr(self, f"{direction}_to")
         return None
-
-    def drop_check(self):
-        return self.title
