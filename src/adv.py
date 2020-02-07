@@ -437,7 +437,7 @@ room['1804_PoppySt'].connectRooms(room['1805_PoppySt'], 'n_to')
 room['1805_PoppySt'].connectRooms(room['1804_PoppySt'], 's_to')
 room['1804_PoppySt'].connectRooms(room['1803_PoppySt'], 's_to')
 room['1803_PoppySt'].connectRooms(room['1802_PoppySt'], 's_to')
-room['1802_PoppySt'].connectRooms(room['1801_PoppySt'], s_to)
+room['1802_PoppySt'].connectRooms(room['1801_PoppySt'], 's_to')
 
 room['1805_PoppySt'].connectRooms(room['1901_JacksonSt'], 'e_to')
 room['1901_JacksonSt'].connectRooms(room['1805_PoppySt'], 'w_to')
