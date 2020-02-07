@@ -62,7 +62,7 @@ def move(request):
 
 @csrf_exempt
 @api_view(["GET"])
-def map_endpoint(request):
+def map_end(request):
     whole_map = Room.objects.all()
         
     return JsonResponse(whole_map)
