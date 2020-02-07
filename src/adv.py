@@ -1,6 +1,4 @@
-from room import Room
-from player import Player
-from passenger import Passenger
+from adventure.models import Room, Player, Passenger
 
 
 
@@ -46,7 +44,7 @@ room = {
 '912_MainSt' : Room(title='912_MainSt', description="You are currently at 912 Main Street there are no bustops or intersections. Please drive forward",passengers=[]),
 '913_MainSt' : Room(title='913_MainSt', description="There is a bustop to your right with 2 people waiting. Pick up the passengers and drop them off according to their instructions", passengers = [people['Jahmir'], people['Zakariya']]),
 '914_MainSt' : Room(title='914_MainSt', description="You are currently at 914 Main Street there are no bustops or intersections. Please drive forward",passengers=[]),
-'915_MainSt' :Room(title='915_MainSt', description="You are at an intersection, please go left or right",passengers=[]),
+'915_MainSt' : Room(title='915_MainSt', description="You are at an intersection, please go left or right",passengers=[]),
 
 
 
